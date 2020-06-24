@@ -1,6 +1,6 @@
 # IA - NLP
 
-## Disclaimer
+## Introdução
 
 Projeto sobre processamento de linguagem natural criado para a disciplina de Inteligência Artificial.
 Conta com algumas simples funções para o pré-processamento de frases em inglês.
