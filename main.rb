@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'initializer'
+require_relative 'natural_language_processor'
 
 nlp = NaturalLanguageProcessor.new
 
