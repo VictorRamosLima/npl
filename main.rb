@@ -1,25 +1,9 @@
-# frozen_string_literal: true
-
 require_relative 'natural_language_processor'
 
-nlp = NaturalLanguageProcessor.new
+phrase = 'I am doing the installation, so she will never need to do it again, since she does not have enough knowledge for it'
 
-phrase = 'I am doing the installation, so she will never need to do it again, \
-since she does not have enough knowledge for it'
+nlp = NaturalLanguageProcessor.new phrase: phrase
 
-words = nlp.tokenize(phrase)
+p nlp.pre_proccess
 
-p words
-
-valid_words = words.select { |word| nlp.valid_word?(word) }
-
-p valid_words
-p nlp.valid_words(words)
-
-stemmed_words = valid_words.map { |word| nlp.stem(word) }
-
-p stemmed_words
-
-lemmed_words = valid_words.map { |word| nlp.lemma(word) }
-
-p lemmed_words
+p NaturalLanguageProcessor.pre_proccess(phrase: phrase)
